@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduNova — Learn Today. Build Tomorrow.</title>
+    <meta
+      name="description"
+      content="EduNova is an online learning platform for programming and technology skills."
+    />
+    <!-- Google Font: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===================== 1. STICKY NAVIGATION ===================== -->
+    <header class="navbar">
+      <nav class="container nav-inner" aria-label="Main navigation">
+        <a href="#home" class="logo" aria-label="EduNova home">
+          <span class="logo-mark">E</span>Edu<span class="logo-accent"
+            >Nova</span
+          >
+        </a>
+
+        <!-- Checkbox toggles the mobile menu without JavaScript -->
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-label="Toggle menu"
+        />
+        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"
+          ><span></span
+        ></label>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#cta" class="btn btn-primary btn-sm">Start Learning</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===================== 2. HERO ===================== -->
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <span class="eyebrow">Programming &amp; Technology Learning</span>
+            <h1>
+              Learn Today. <span class="gradient-text">Build Tomorrow.</span>
+            </h1>
+            <p class="lead">
+              Master programming and technology skills through practical,
+              accessible learning designed for your future.
+            </p>
+            <div class="hero-actions">
+              <a href="#cta" class="btn btn-primary">Start Learning</a>
+              <a href="#courses" class="btn btn-outline">Explore Courses</a>
+            </div>
+            <ul class="hero-stats">
+              <li><strong>3+</strong><span>Learning paths</span></li>
+              <li><strong>100%</strong><span>Self-paced</span></li>
+              <li><strong>Hands-on</strong><span>Projects</span></li>
+            </ul>
+          </div>
+          <div class="hero-visual">
+            <img
+              src="images/hero.jpg"
+              alt="Student learning to code on a laptop surrounded by code windows and lesson cards"
+              width="1200"
+              height="1024"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== 3. FEATURED COURSES ===================== -->
+      <section id="courses" class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Featured Courses</span>
+            <h2>Explore Your Learning Path</h2>
+          </div>
+          <div class="course-grid">
+            <article class="card course-card">
+              <img
+                src="images/web.jpg"
+                alt="Browser window showing HTML, CSS and JavaScript"
+                loading="lazy"
+              />
+              <div class="course-body">
+                <span class="badge">Beginner</span>
+                <h3>Web Development</h3>
+                <p>
+                  Learn HTML, CSS &amp; JavaScript and build your first
+                  websites.
+                </p>
+                <a href="#cta" class="link-arrow"
+                  >Learn More <span aria-hidden="true">→</span></a
+                >
+              </div>
+            </article>
+            <article class="card course-card">
+              <img
+                src="images/uiux.jpg"
+                alt="Design tools, wireframes and color swatches"
+                loading="lazy"
+              />
+              <div class="course-body">
+                <span class="badge">Beginner / Intermediate</span>
+                <h3>UI/UX Design</h3>
+                <p>
+                  Design modern digital experiences that people love to use.
+                </p>
+                <a href="#cta" class="link-arrow"
+                  >Learn More <span aria-hidden="true">→</span></a
+                >
+              </div>
+            </article>
+            <article class="card course-card">
+              <img
+                src="images/ai.jpg"
+                alt="Glowing AI brain on a computer chip"
+                loading="lazy"
+              />
+              <div class="course-body">
+                <span class="badge">Beginner</span>
+                <h3>Artificial Intelligence</h3>
+                <p>
+                  Discover the world of intelligent technology and how it works.
+                </p>
+                <a href="#cta" class="link-arrow"
+                  >Learn More <span aria-hidden="true">→</span></a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== 4. WHY EDUNOVA ===================== -->
+      <section id="about" class="section section-tint">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">About EduNova</span>
+            <h2>Why Learn With EduNova?</h2>
+          </div>
+          <div class="benefit-grid">
+            <div class="card benefit">
+              <div class="icon" aria-hidden="true">&lt;/&gt;</div>
+              <h3>Practical Learning</h3>
+              <p>Learn concepts through practical examples and projects.</p>
+            </div>
+            <div class="card benefit">
+              <div class="icon" aria-hidden="true">◷</div>
+              <h3>Learn at Your Own Pace</h3>
+              <p>Build your skills with flexible learning.</p>
+            </div>
+            <div class="card benefit">
+              <div class="icon" aria-hidden="true">✦</div>
+              <h3>Future-Ready Skills</h3>
+              <p>
+                Develop technology skills that can help prepare you for
+                tomorrow's opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== 5. LEARNING JOURNEY ===================== -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">How It Works</span>
+            <h2>Your Journey Starts Here</h2>
+          </div>
+          <ol class="journey">
+            <li class="step">
+              <span class="step-num">01</span>
+              <h3>Choose a Skill</h3>
+              <p>Pick a learning path that matches your goals.</p>
+            </li>
+            <li class="step">
+              <span class="step-num">02</span>
+              <h3>Learn &amp; Practice</h3>
+              <p>Follow clear lessons and practise with real examples.</p>
+            </li>
+            <li class="step">
+              <span class="step-num">03</span>
+              <h3>Build &amp; Grow</h3>
+              <p>Create projects and grow your confidence.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ===================== 6. CALL TO ACTION ===================== -->
+      <section id="cta" class="section">
+        <div class="container">
+          <div class="cta-box">
+            <h2>Ready to Start Learning?</h2>
+            <p>
+              Turn your curiosity into skills and your skills into
+              possibilities.
+            </p>
+            <a href="#home" class="btn btn-light">Start Your Journey</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== 7. FOOTER ===================== -->
+    <footer id="contact" class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="#home" class="logo"
+            ><span class="logo-mark">E</span>Edu<span class="logo-accent"
+              >Nova</span
+            ></a
+          >
+          <p class="footer-text">
+            Practical programming and technology education for students and
+            curious beginners.
+          </p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <a href="mailto:hello@edunova.example">hello@edunova.example</a>
+            </li>
+            <li>+00 123 456 7890</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <div class="socials">
+            <a href="#contact" aria-label="LinkedIn">in</a>
+            <a href="#contact" aria-label="GitHub">gh</a>
+            <a href="#contact" aria-label="X">X</a>
+            <a href="#contact" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">© 2026 EduNova. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
