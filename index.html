@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>OIBSIP | Web Development Projects</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1000px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 1px solid #64748b;
+      border-radius: 50px;
+      color: #cbd5e1;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 64px);
+      margin-bottom: 15px;
+    }
+
+    .highlight {
+      color: #60a5fa;
+    }
+
+    .subtitle {
+      max-width: 650px;
+      margin: 0 auto 45px;
+      color: #cbd5e1;
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      padding: 35px 30px;
+      text-align: left;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #60a5fa;
+    }
+
+    .icon {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .card h2 {
+      margin-bottom: 12px;
+      font-size: 25px;
+    }
+
+    .card p {
+      color: #cbd5e1;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      background: #2563eb;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      margin-top: 45px;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <span class="badge">Oasis Infobyte Internship • Web Development</span>
+
+    <h1>
+      My <span class="highlight">OIBSIP</span> Projects
+    </h1>
+
+    <p class="subtitle">
+      A collection of web development projects created during my
+      Oasis Infobyte internship, using HTML, CSS, Bootstrap and JavaScript.
+    </p>
+
+    <section class="projects">
+
+      <!-- Project 1 -->
+      <article class="card">
+        <div class="icon">🎓</div>
+
+        <h2>EduNova</h2>
+
+        <p>
+          A modern and responsive landing page for an online programming
+          and technology learning platform.
+        </p>
+
+        <a
+          href="./WebDev-L1-LandingPage/"
+          class="button"
+          target="_blank"
+        >
+          View EduNova →
+        </a>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card">
+        <div class="icon">🌡️</div>
+
+        <h2>Temperature Converter</h2>
+
+        <p>
+          An interactive temperature conversion tool built with
+          HTML, CSS and JavaScript.
+        </p>
+
+        <a
+          href="./WebDev-L1-TemperatureConverter/"
+          class="button"
+          target="_blank"
+        >
+          View Converter →
+        </a>
+      </article>
+
+    </section>
+
+    <footer>
+      © 2026 Sadaf Turkani • Oasis Infobyte Internship
+    </footer>
+
+  </main>
+
+</body>
+</html>
