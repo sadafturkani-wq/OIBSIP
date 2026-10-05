@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ThermoNova — a clean, modern temperature converter for Celsius, Fahrenheit, and Kelvin."
+    />
+    <title>ThermoNova — Temperature Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+  <body>
+    <!-- ============ HEADER ============ -->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="#top" class="logo" aria-label="ThermoNova home">
+          <span class="logo-mark" aria-hidden="true">
+            <span class="logo-bulb"></span>
+            <span class="logo-stem"></span>
+          </span>
+          <span class="logo-text">Thermo<span class="logo-accent">Nova</span></span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="primaryNav"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+          <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#converter">Converter</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ HERO ============ -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Temperature Converter</p>
+            <h1>Convert Temperatures with Confidence.</h1>
+            <p class="hero-sub">
+              Quickly convert Celsius, Fahrenheit, and Kelvin with a simple,
+              accurate, and easy-to-use temperature converter.
+            </p>
+            <a href="#converter" class="btn btn-primary">Start Converting</a>
+          </div>
+
+          <!-- CSS thermometer illustration -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="thermometer">
+              <div class="thermometer-tube">
+                <div class="thermometer-fill" id="heroFill"></div>
+                <div class="thermometer-ticks">
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="thermometer-bulb">
+                <div class="thermometer-bulb-inner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONVERTER ============ -->
+      <section class="converter-section" id="converter">
+        <div class="container">
+          <div class="converter-card">
+            <h2 class="converter-title">Temperature Converter</h2>
+            <p class="converter-sub">
+              Enter a value, pick your unit, and see all three scales instantly.
+            </p>
+
+            <form id="converterForm" novalidate>
+              <div class="form-row">
+                <div class="field">
+                  <label for="tempInput">Temperature value</label>
+                  <input
+                    type="number"
+                    id="tempInput"
+                    name="tempInput"
+                    placeholder="e.g. 25.5"
+                    step="any"
+                    inputmode="decimal"
+                    autocomplete="off"
+                  />
+                </div>
+
+                <div class="field">
+                  <label for="unitSelect">Input unit</label>
+                  <select id="unitSelect" name="unitSelect">
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Error message area -->
+              <div
+                class="error-area"
+                id="errorArea"
+                role="alert"
+                aria-live="assertive"
+              ></div>
+
+              <div class="button-row">
+                <button type="submit" class="btn btn-primary" id="convertBtn">
+                  Convert Temperature
+                </button>
+                <button type="button" class="btn btn-ghost" id="clearBtn">
+                  Clear
+                </button>
+              </div>
+            </form>
+
+            <!-- Results area -->
+            <div
+              class="results"
+              id="results"
+              aria-live="polite"
+              aria-label="Conversion results"
+            >
+              <article class="result-card" data-unit="celsius">
+                <span class="result-symbol">°C</span>
+                <span class="result-name">Celsius</span>
+                <span class="result-value" id="resultCelsius">—</span>
+              </article>
+
+              <article class="result-card" data-unit="fahrenheit">
+                <span class="result-symbol">°F</span>
+                <span class="result-name">Fahrenheit</span>
+                <span class="result-value" id="resultFahrenheit">—</span>
+              </article>
+
+              <article class="result-card" data-unit="kelvin">
+                <span class="result-symbol">K</span>
+                <span class="result-name">Kelvin</span>
+                <span class="result-value" id="resultKelvin">—</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ HOW IT WORKS ============ -->
+      <section class="how-section">
+        <div class="container">
+          <h2 class="section-title">How It Works</h2>
+          <p class="section-sub">Three simple steps to an accurate conversion.</p>
+
+          <div class="steps">
+            <div class="step">
+              <span class="step-number">01</span>
+              <h3>Enter Temperature</h3>
+              <p>Type any numeric value — positive, negative, or decimal.</p>
+            </div>
+            <div class="step">
+              <span class="step-number">02</span>
+              <h3>Choose Unit</h3>
+              <p>Select Celsius, Fahrenheit, or Kelvin as your starting scale.</p>
+            </div>
+            <div class="step">
+              <span class="step-number">03</span>
+              <h3>Get Instant Results</h3>
+              <p>See the equivalent values across all three temperature scales.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TEMPERATURE GUIDE ============ -->
+      <section class="guide-section" id="about">
+        <div class="container">
+          <h2 class="section-title">Temperature Guide</h2>
+          <p class="section-sub">
+            A quick introduction to the three scales you'll encounter.
+          </p>
+
+          <div class="guide-grid">
+            <article class="guide-card">
+              <span class="guide-symbol">°C</span>
+              <h3>Celsius</h3>
+              <p>
+                Used in most countries for everyday weather and cooking. Water
+                freezes at 0°C and boils at 100°C.
+              </p>
+            </article>
+            <article class="guide-card">
+              <span class="guide-symbol">°F</span>
+              <h3>Fahrenheit</h3>
+              <p>
+                Commonly used in the United States. Water freezes at 32°F and
+                boils at 212°F on this scale.
+              </p>
+            </article>
+            <article class="guide-card">
+              <span class="guide-symbol">K</span>
+              <h3>Kelvin</h3>
+              <p>
+                The scientific standard. It starts at absolute zero (0 K), the
+                point where molecular motion stops.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="logo-text">Thermo<span class="logo-accent">Nova</span></span>
+          <p>
+            A clean, accurate temperature converter built for learners and
+            everyday curious minds.
+          </p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#converter">Converter</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 ThermoNova. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
