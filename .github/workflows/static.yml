@@ -1,5 +1,5 @@
-# Simple workflow for deploying EduNova to GitHub Pages
-name: Deploy EduNova to Pages
+# Workflow for deploying all OIBSIP projects to GitHub Pages
+name: Deploy OIBSIP Projects to Pages
 
 on:
   push:
@@ -31,10 +31,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload EduNova landing page
+      - name: Upload OIBSIP projects
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './WebDev-L1-LandingPage'
+          path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
