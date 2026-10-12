@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sadaf Torkani — Web Developer & UI/UX Designer</title>
+    <meta
+      name="description"
+      content="Portfolio of Sadaf Turkani, a growing web developer and UI/UX designer building modern, responsive digital experiences."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ============ NAVBAR ============ -->
+    <header class="navbar" id="navbar">
+      <nav class="nav container" aria-label="Main navigation">
+        <a href="#home" class="logo" aria-label="Sadaf Turkani, home"
+          >ST<span>.</span></a
+        >
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="nav-cta-mobile">
+            <a href="#contact" class="btn btn-primary">Let's Talk</a>
+          </li>
+        </ul>
+
+        <a href="#contact" class="btn btn-primary nav-cta">Let's Talk</a>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="home">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="grid-lines"></div>
+        </div>
+
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <span class="badge load-in" style="--d: 0.05s"
+              ><span class="dot"></span>Web Developer • UI/UX Designer</span
+            >
+            <h1 class="load-in" style="--d: 0.15s">
+              Hi, I'm Sadaf Torkani.
+              <span class="gradient-text"
+                >Building Digital Experiences That Inspire.</span
+              >
+            </h1>
+            <p class="hero-desc load-in" style="--d: 0.3s">
+              I design and build modern, responsive websites with a focus on
+              clean interfaces, thoughtful user experiences, and continuous
+              learning.
+            </p>
+            <div class="hero-actions load-in" style="--d: 0.45s">
+              <a href="#projects" class="btn btn-primary btn-lg"
+                >View My Work
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-ghost btn-lg">Let's Connect</a>
+            </div>
+          </div>
+
+          <div
+            class="hero-visual load-in"
+            style="--d: 0.35s"
+            aria-hidden="true"
+          >
+            <div class="profile-card" id="profileCard">
+              <div class="pc-top">
+                <span class="pc-dots"><i></i><i></i><i></i></span>
+                <span class="pc-file">sadaf.js</span>
+              </div>
+              <div class="pc-avatar">
+                <div class="pc-glow"></div>
+                <span><img src="./assets/sadaf-torkani.jpg" alt=""></span>
+              </div>
+              <pre class="pc-code"><code><span class="k">const</span> sadaf = {
+  role: <span class="s">'Developer &amp; Designer'</span>,
+  focus: [<span class="s">'clean UI'</span>, <span class="s">'UX'</span>],
+  learning: <span class="b">true</span>,
+};</code></pre>
+              <div class="pc-status">
+                <span class="dot"></span>Open to learning & collaboration
+              </div>
+            </div>
+            <span class="chip chip-1">HTML</span>
+            <span class="chip chip-2">CSS</span>
+            <span class="chip chip-3">JS</span>
+            <span class="chip chip-4">UI/UX</span>
+          </div>
+        </div>
+
+        <a
+          href="#about"
+          class="scroll-hint"
+          aria-label="Scroll to About section"
+          ><span></span
+        ></a>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="section" id="about">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="eyebrow">01 — About</span>
+            <h2>About Me</h2>
+            <p>A little about my journey.</p>
+          </header>
+
+          <div class="about-grid">
+            <div class="about-text reveal">
+              <p class="lead">
+                I’m Sadaf Torkani, a web developer and UI/UX designer passionate
+                about turning ideas into clean, engaging digital experiences.
+              </p>
+              <p>
+                I enjoy learning modern technologies, experimenting with design,
+                and building projects that combine functionality with beautiful
+                visual details. My goal is to continuously improve my skills and
+                create meaningful digital products.
+              </p>
+
+              <div class="mini-cards">
+                <div class="mini-card">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8 6l-6 6 6 6M16 6l6 6-6 6" />
+                  </svg>
+                  <span>Web Development</span>
+                </div>
+                <div class="mini-card">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M12 3a9 9 0 000 18M3 12h18" />
+                  </svg>
+                  <span>UI/UX Design</span>
+                </div>
+                <div class="mini-card">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 17l6-6 4 4 8-8M15 7h6v6" />
+                  </svg>
+                  <span>Continuous Learning</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="journey-card glass reveal" style="--d: 0.15s">
+              <p class="journey-label">My process</p>
+              <ol class="journey">
+                <li>
+                  <span class="j-num">01</span>
+                  <div>
+                    <strong>Learning</strong
+                    ><small>Exploring new tools &amp; ideas</small>
+                  </div>
+                </li>
+                <li>
+                  <span class="j-num">02</span>
+                  <div>
+                    <strong>Designing</strong
+                    ><small>Sketching interfaces in Figma</small>
+                  </div>
+                </li>
+                <li>
+                  <span class="j-num">03</span>
+                  <div>
+                    <strong>Building</strong
+                    ><small>Turning designs into code</small>
+                  </div>
+                </li>
+                <li>
+                  <span class="j-num">04</span>
+                  <div>
+                    <strong>Growing</strong
+                    ><small>Reflecting &amp; improving</small>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SKILLS ============ -->
+      <section class="section section-alt" id="skills">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="eyebrow">02 — Skills</span>
+            <h2>My Skills</h2>
+            <p>Technologies and tools I work with.</p>
+          </header>
+
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <div class="skill-icon">&lt;/&gt;</div>
+              <h3>HTML5</h3>
+              <p>Semantic and accessible web structure</p>
+              <span class="level level-good">Comfortable</span>
+            </article>
+            <article class="skill-card reveal">
+              <div class="skill-icon">{ }</div>
+              <h3>CSS3</h3>
+              <p>Responsive layouts, animations and modern styling</p>
+              <span class="level level-good">Comfortable</span>
+            </article>
+            <article class="skill-card reveal">
+              <div class="skill-icon">JS</div>
+              <h3>JavaScript</h3>
+              <p>Interactive and dynamic web experiences</p>
+              <span class="level level-grow">Growing</span>
+            </article>
+            <article class="skill-card reveal">
+              <div class="skill-icon">B</div>
+              <h3>Bootstrap</h3>
+              <p>Responsive UI components and layouts</p>
+              <span class="level level-good">Comfortable</span>
+            </article>
+            <article class="skill-card reveal">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M9 3h3v6H9a3 3 0 010-6zM12 3h3a3 3 0 010 6h-3zM9 9h3v6H9a3 3 0 010-6zM15 12a3 3 0 11-3-3 3 3 0 013 3zM9 15h3v3a3 3 0 11-3-3z"
+                  />
+                </svg>
+              </div>
+              <h3>Figma</h3>
+              <p>Interface design and prototyping</p>
+              <span class="level level-good">Comfortable</span>
+            </article>
+            <article class="skill-card reveal">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 3h12v6H12zM6 9h6l6 6H6zM6 15h6v6z" />
+                </svg>
+              </div>
+              <h3>Framer</h3>
+              <p>Modern interactive website design</p>
+              <span class="level level-grow">Growing</span>
+            </article>
+            <article class="skill-card reveal">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="6" cy="6" r="2" />
+                  <circle cx="6" cy="18" r="2" />
+                  <circle cx="18" cy="9" r="2" />
+                  <path d="M6 8v8M18 11c0 4-6 3-11 6" />
+                </svg>
+              </div>
+              <h3>Git &amp; GitHub</h3>
+              <p>Version control and project collaboration</p>
+              <span class="level level-grow">Growing</span>
+            </article>
+            <article class="skill-card reveal">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="1.6" />
+                  <ellipse cx="12" cy="12" rx="10" ry="4" />
+                  <ellipse
+                    cx="12"
+                    cy="12"
+                    rx="10"
+                    ry="4"
+                    transform="rotate(60 12 12)"
+                  />
+                  <ellipse
+                    cx="12"
+                    cy="12"
+                    rx="10"
+                    ry="4"
+                    transform="rotate(120 12 12)"
+                  />
+                </svg>
+              </div>
+              <h3>React</h3>
+              <p>Currently learning modern component-based development</p>
+              <span class="level level-learn">Currently Learning</span>
+            </article>
+            <article class="skill-card reveal">
+              <div class="skill-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="16" rx="3" />
+                  <path d="M3 9h18M8 14h4" />
+                </svg>
+              </div>
+              <h3>UI/UX Design</h3>
+              <p>User-centered interfaces and visual design</p>
+              <span class="level level-grow">Growing</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ WHAT I DO ============ -->
+      <section class="section" id="services">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="eyebrow">03 — Focus</span>
+            <h2>What I Love to Build</h2>
+            <p>The kind of work that gets me excited to open my editor.</p>
+          </header>
+
+          <div class="build-grid">
+            <article class="build-card glass reveal">
+              <span class="build-num">01</span>
+              <svg class="build-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="2" y="4" width="14" height="11" rx="2" />
+                <rect x="17" y="8" width="5" height="10" rx="1.5" />
+                <path d="M6 19h6" />
+              </svg>
+              <h3>Responsive Websites</h3>
+              <p>
+                Modern websites that look beautiful across desktop, tablet and
+                mobile.
+              </p>
+            </article>
+            <article class="build-card glass reveal" style="--d: 0.1s">
+              <span class="build-num">02</span>
+              <svg class="build-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="8" r="4" />
+                <path d="M4 21a8 8 0 0116 0" />
+              </svg>
+              <h3>UI/UX Experiences</h3>
+              <p>
+                Clean, intuitive interfaces designed around users and their
+                needs.
+              </p>
+            </article>
+            <article class="build-card glass reveal" style="--d: 0.2s">
+              <span class="build-num">03</span>
+              <svg class="build-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 3l14 8-6 2-2 6z" />
+              </svg>
+              <h3>Interactive Experiences</h3>
+              <p>Engaging web interactions using HTML, CSS and JavaScript.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <section class="section section-alt" id="projects">
+        <div class="container">
+          <header class="section-head reveal">
+            <span class="eyebrow">04 — Work</span>
+            <h2>Featured Projects</h2>
+            <p>A selection of projects I've worked on.</p>
+          </header>
+
+          <!-- Cards are rendered from the projects array in script.js -->
+          <div class="projects-grid" id="projectsGrid"></div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="section" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-info reveal">
+            <span class="eyebrow">05 — Contact</span>
+            <h2>Let's Build Something Together</h2>
+            <p>
+              Have an idea, a project, or simply want to connect? I'd love to
+              hear from you.
+            </p>
+
+            <div class="social-cards">
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener"
+                class="social-card"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M9 19c-4 1.5-4-2-6-2.5m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 00-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"
+                  />
+                </svg>
+                <div><strong>GitHub</strong><small>View my code</small></div>
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener"
+                class="social-card"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="3" />
+                  <path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 014 0v4M12 10v7" />
+                </svg>
+                <div><strong>LinkedIn</strong><small>Let's connect</small></div>
+              </a>
+              <a href="mailto:sadaf@example.com" class="social-card">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path d="M3 7l9 6 9-6" />
+                </svg>
+                <div>
+                  <strong>Email</strong><small>sadaf@example.com</small>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <form
+            class="contact-form glass reveal"
+            id="contactForm"
+            novalidate
+            style="--d: 0.1s"
+          >
+            <p class="demo-note">
+              Frontend demo form — messages are not actually sent.
+            </p>
+            <div class="field">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                autocomplete="name"
+              />
+              <small class="error" id="nameError" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+              />
+              <small class="error" id="emailError" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell me about your idea..."
+              ></textarea>
+              <small class="error" id="messageError" aria-live="polite"></small>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">
+              Send Message
+            </button>
+            <div
+              class="form-success"
+              id="formSuccess"
+              role="status"
+              aria-live="polite"
+            ></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="#home" class="logo">ST<span>.</span></a>
+          <p>Designed &amp; built by Sadaf Torkani.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-social">
+          <a
+            href="https://github.com/sadafturkani-wq"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M9 19c-4 1.5-4-2-6-2.5m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 00-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/sadaf-torkani-3306b0393/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="3" />
+              <path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 014 0v4M12 10v7" />
+            </svg>
+          </a>
+          <a href="mailto:sadafturkani@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="M3 7l9 6 9-6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <p class="copyright container">
+        © 2026 Sadaf Torkani. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- ============ PROJECT MODAL ============ -->
+    <div class="modal" id="projectModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close></div>
+      <div
+        class="modal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <button
+          class="modal-close"
+          data-close
+          aria-label="Close project details"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+        <div class="modal-visual" id="modalVisual"></div>
+        <div class="modal-body">
+          <span class="project-cat" id="modalCat"></span>
+          <h3 id="modalTitle"></h3>
+          <p id="modalDesc"></p>
+          <div class="tags" id="modalTags"></div>
+          <div class="modal-actions">
+            <a
+              href="#"
+              class="btn btn-primary"
+              id="modalDemo"
+              target="_blank"
+              rel="noopener"
+              >Live Demo</a
+            >
+            <a
+              href="https://github.com/sadafturkani-wq"
+              class="btn btn-ghost"
+              id="modalGit"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 19V5M6 11l6-6 6 6" />
+      </svg>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
